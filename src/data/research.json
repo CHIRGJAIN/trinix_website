@@ -1,0 +1,34 @@
+{
+  "preprints": [
+    {
+      "id": "preprint-quantum-bridges",
+      "title": "Quantum Bridges for Vedic Knowledge Graph Alignment",
+      "summary": "Exploring hybrid graph embeddings to align Vedic ontology systems with quantum-enhanced solvers.",
+      "year": 2025,
+      "link": "#"
+    },
+    {
+      "id": "preprint-k8s-autotune",
+      "title": "Autonomous Kubernetes Tuning via Predictive LLM Agents",
+      "summary": "Proposes a multi-agent controller stack for self-healing, self-scaling Kubernetes clusters.",
+      "year": 2025,
+      "link": "#"
+    }
+  ],
+  "published": [
+    {
+      "id": "published-vedic-ml",
+      "title": "Vedic Sequence Models for Explainable AI",
+      "summary": "Introduces interpretable sequence models inspired by Vedic mathematics for mission-critical AI.",
+      "year": 2024,
+      "link": "#"
+    },
+    {
+      "id": "published-quantum-k8s",
+      "title": "Quantum-Assisted Workload Scheduling on Kubernetes",
+      "summary": "Validates hybrid quantum-classical schedulers for latency-sensitive, multi-tenant clusters.",
+      "year": 2023,
+      "link": "#"
+    }
+  ]
+}

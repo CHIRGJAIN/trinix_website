@@ -1,0 +1,266 @@
+[
+  {
+    "id": "web",
+    "name": "Studio",
+    "summary": "Boutique build squad turning early-stage ideas into production-grade digital products through rapid experimentation and battle-tested delivery practices.",
+    "status": "Launch",
+    "domain": "Studio",
+    "keyFeatures": [
+      "Idea-to-MVP in under eight weeks",
+      "Embedded product leadership",
+      "Multi-stack engineering squad",
+      "Observability and QA baked in"
+    ],
+    "ctas": [
+      {
+        "label": "Start a Project",
+        "href": "/coming-soon"
+      },
+      {
+        "label": "Capabilities",
+        "href": "/coming-soon"
+      }
+    ],
+    "link": "https://webstitch.org"
+  },
+  {
+    "id": "webstitch",
+    "name": "Webstitch Studio",
+    "summary": "Boutique build squad turning early-stage ideas into production-grade digital products through rapid experimentation and battle-tested delivery practices.",
+    "status": "Launching",
+    "domain": "Product Studio",
+    "keyFeatures": [
+      "Idea-to-MVP in under eight weeks",
+      "Embedded product leadership",
+      "Multi-stack engineering squad",
+      "Observability and QA baked in"
+    ],
+    "ctas": [
+      {
+        "label": "Start a Project",
+        "href": "/coming-soon"
+      },
+      {
+        "label": "Capabilities",
+        "href": "/coming-soon"
+      }
+    ],
+    "link": "/coming-soon"
+  },
+  {
+    "id": "sos",
+    "name": "SOS Emergency Network",
+    "summary": "Emergency response system ensuring rapid assistance and safety. Connects responders, dispatchers, and civilians via real-time communication and location-based services for immediate crisis response.",
+    "status": "coming soon",
+    "domain": "Emergency Services",
+    "keyFeatures": [
+      "Real-time emergency alert system",
+      "GPS location tracking and mapping",
+      "Multi-channel communication platform",
+      "Emergency responder dispatch system"
+    ],
+    "ctas": [
+      {
+        "label": "Explore",
+        "href": "/coming-soon"
+      },
+      {
+        "label": "Details",
+        "href": "/coming-soon"
+      }
+    ],
+    "link": "/coming-soon"
+  },
+  {
+    "id": "vedic-ai",
+    "name": "Vedic AI Reasoning Lab",
+    "summary": "Lightweight, research-first reasoning models inspired by Vedic knowledge systems that emphasize transparency and cultural alignment for responsible AI deployment.",
+    "status": "Research",
+    "domain": "AI Research",
+    "keyFeatures": [
+      "Vedic ontology-backed knowledge graphs",
+      "Explainability tooling for regulated sectors",
+      "Few-shot guided discernment engine",
+      "Alignment signal monitoring dashboards"
+    ],
+    "ctas": [
+      {
+        "label": "Preview",
+        "href": "/coming-soon"
+      },
+      {
+        "label": "Lab Notes",
+        "href": "/coming-soon"
+      }
+    ],
+    "link": "/coming-soon"
+  },
+  {
+    "id": "medgo",
+    "name": "MedGO Healthcare",
+    "summary": "HIPAA-compliant telemedicine platform enabling secure video consultations, patient record management, prescription handling, and appointment scheduling. Features end-to-end encryption and provider verification.",
+    "status": "Pilot",
+    "domain": "Healthcare",
+    "keyFeatures": [
+      "HIPAA-compliant video consultations",
+      "Secure patient record management",
+      "Electronic prescription system",
+      "Appointment scheduling & reminders"
+    ],
+    "ctas": [
+      {
+        "label": "Request Demo",
+        "href": "/coming-soon"
+      },
+      {
+        "label": "Product Brief",
+        "href": "/coming-soon"
+      }
+    ],
+    "link": "/coming-soon"
+  },
+  {
+    "id": "eventify",
+    "name": "Eventify Platform",
+    "summary": "Comprehensive event management platform featuring multi-user roles, venue discovery, booking management, and real-time dashboard analytics across large event portfolios.",
+    "status": "In Discovery",
+    "domain": "Event Management",
+    "keyFeatures": [
+      "Multi-role user management system",
+      "Advanced venue search & filtering",
+      "Real-time booking management",
+      "Interactive dashboard analytics"
+    ],
+    "ctas": [
+      {
+        "label": "Explore",
+        "href": "/coming-soon"
+      },
+      {
+        "label": "Details",
+        "href": "/coming-soon"
+      }
+    ],
+    "link": "/coming-soon"
+  },
+  {
+    "id": "propgo",
+    "name": "PropGo Platform",
+    "summary": "Digital platform designed to simplify real estate transactions by connecting property owners with agents through verified listings, secure interactions, and streamlined workflows.",
+    "status": "Scoping",
+    "domain": "Real Estate",
+    "keyFeatures": [
+      "Verified property listings system",
+      "Direct owner-to-agent communication",
+      "Secure property verification process",
+      "Agent subscription management"
+    ],
+    "ctas": [
+      {
+        "label": "Explore",
+        "href": "/propgo"
+      },
+      {
+        "label": "Details",
+        "href": "/propgo"
+      }
+    ],
+    "link": "/propgo"
+  },
+  {
+    "id": "fin-fine",
+    "name": "Fingo Reserve",
+    "summary": "A resilient digital reserve concept exploring stability, transparency, and programmable policy for next-generation finance with a focus on responsible AI governance.",
+    "status": "Concept",
+    "domain": "FinTech",
+    "keyFeatures": [
+      "Transparent reserve accounting",
+      "Programmable policy levers",
+      "Risk dashboards with anomaly detection",
+      "Cross-chain interoperability research"
+    ],
+    "ctas": [
+      {
+        "label": "Research Deck",
+        "href": "/coming-soon"
+      },
+      {
+        "label": "Concept Note",
+        "href": "/coming-soon"
+      }
+    ],
+    "link": "/coming-soon"
+  },
+  {
+    "id": "dharamraksha",
+    "name": "DharamRaksha",
+    "summary": "Judicial AI co-pilot assisting courts and legal teams with document analysis, precedent extraction, and equitable decision insights anchored in constitutional values.",
+    "status": "Design",
+    "domain": "LegalTech",
+    "keyFeatures": [
+      "Automated precedent summarization",
+      "Bias and equity review signals",
+      "Secure evidence handling pipeline",
+      "Bench-ready briefing dashboards"
+    ],
+    "ctas": [
+      {
+        "label": "Design Preview",
+        "href": "/preprints/DharamRaksha.pdf"
+      },
+      {
+        "label": "Request Access",
+        "href": "/coming-soon"
+      }
+    ],
+    "link": "/preprints/DharamRaksha.pdf"
+  },
+  {
+    "id": "quirky",
+    "name": "Quirky",
+    "summary": "A playful, privacy-respecting matching experience that blends personality science with immersive prompts to foster meaningful connections.",
+    "status": "Concept",
+    "domain": "Social Networking",
+    "keyFeatures": [
+      "Secure personality-based matchmaking",
+      "Ephemeral voice-room icebreakers",
+      "Safety-first community guidelines",
+      "Anonymized analytics for hosts"
+    ],
+    "ctas": [
+      {
+        "label": "Join Waitlist",
+        "href": "/coming-soon"
+      },
+      {
+        "label": "Concept Deck",
+        "href": "/coming-soon"
+      }
+    ],
+    "link": "/coming-soon"
+  },
+  {
+    "id": "ethereal-nexus",
+    "name": "Ethereal Nexus",
+    "summary": "Metaverse playground for persistent, collaborative experiences that merges volumetric storytelling, creator economies, and social exploration.",
+    "status": "Exploration",
+    "domain": "Immersive Worlds",
+    "keyFeatures": [
+      "Persistent shared world instances",
+      "Creator economy tooling",
+      "Spatial audio events",
+      "Lore-driven narrative arcs"
+    ],
+    "ctas": [
+      {
+        "label": "Experience Preview",
+        "href": "/coming-soon"
+      },
+      {
+        "label": "Creator Docs",
+        "href": "/coming-soon"
+      }
+    ],
+    "link": "/coming-soon"
+  }
+]

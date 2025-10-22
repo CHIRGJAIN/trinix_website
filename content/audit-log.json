@@ -1,0 +1,215 @@
+[
+  {
+    "id": "116e9643-7def-434b-9bc2-a95b4dba06d7",
+    "timestamp": "2025-10-22T20:26:42.954Z",
+    "resource": "careers",
+    "action": "create",
+    "userId": "admin",
+    "after": {
+      "id": "frontend",
+      "title": "frontend developer",
+      "location": "noida",
+      "type": "Internship",
+      "description": "interesting role",
+      "link": "https://example.com/"
+    }
+  },
+  {
+    "id": "40f92add-2e0c-4602-b8ec-2bae3702fdae",
+    "timestamp": "2025-10-22T20:09:56.784Z",
+    "resource": "research-published",
+    "action": "create",
+    "userId": "admin",
+    "after": {
+      "id": "sos",
+      "title": "bohot badiuya",
+      "authors": [
+        "CHIRAG JAIN"
+      ],
+      "venue": "journal",
+      "doi": "www.google.com",
+      "open_access": true,
+      "domain": [
+        "FINTECH"
+      ]
+    }
+  },
+  {
+    "id": "5ebe99ee-d2b1-431e-abbc-ae3dd7c7f172",
+    "timestamp": "2025-10-22T20:07:09.457Z",
+    "resource": "projects",
+    "action": "create",
+    "userId": "admin",
+    "after": {
+      "id": "web",
+      "name": "Studio",
+      "summary": "Boutique build squad turning early-stage ideas into production-grade digital products through rapid experimentation and battle-tested delivery practices.",
+      "status": "Launch",
+      "domain": "Studio",
+      "link": "/coming-soon",
+      "keyFeatures": [
+        "Idea-to-MVP in under eight weeks",
+        "Embedded product leadership",
+        "Multi-stack engineering squad",
+        "Observability and QA baked in"
+      ],
+      "ctas": [
+        {
+          "label": "Start a Project",
+          "href": "/coming-soon"
+        },
+        {
+          "label": "Capabilities",
+          "href": "/coming-soon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "3cecb4a8-2da5-42dc-9ac6-82995adf1b2d",
+    "timestamp": "2025-10-22T20:04:23.021Z",
+    "resource": "blog",
+    "action": "create",
+    "userId": "admin",
+    "after": {
+      "slug": "hiii",
+      "title": "hello",
+      "blurb": "wsgbhsrthsntsbnsery",
+      "author": "myself",
+      "published_at": "2025-10-23",
+      "publication_date": "2025-10-23",
+      "estimated_read_duration": "5 mins",
+      "description_points": [
+        "SOS Emergency Network",
+        "SOS Emergency Network",
+        "SOS Emergency Network",
+        "SOS Emergency Network",
+        "SOS Emergency Network"
+      ]
+    }
+  },
+  {
+    "id": "e06428a0-5a38-420a-98f0-39b1f4cbcad1",
+    "timestamp": "2025-10-22T20:02:23.604Z",
+    "resource": "projects",
+    "action": "update",
+    "userId": "admin",
+    "before": {
+      "id": "sos",
+      "name": "SOS Emergency Network",
+      "summary": "Emergency response system ensuring rapid assistance and safety. Connects responders, dispatchers, and civilians via real-time communication and location-based services for immediate crisis response.",
+      "status": "Live",
+      "domain": "Emergency Services",
+      "keyFeatures": [
+        "Real-time emergency alert system",
+        "GPS location tracking and mapping",
+        "Multi-channel communication platform",
+        "Emergency responder dispatch system"
+      ],
+      "ctas": [
+        {
+          "label": "Explore",
+          "href": "/coming-soon"
+        },
+        {
+          "label": "Details",
+          "href": "/coming-soon"
+        }
+      ],
+      "link": "/coming-soon"
+    },
+    "after": {
+      "id": "sos",
+      "name": "SOS Emergency Network",
+      "summary": "Emergency response system ensuring rapid assistance and safety. Connects responders, dispatchers, and civilians via real-time communication and location-based services for immediate crisis response.",
+      "status": "coming soon",
+      "domain": "Emergency Services",
+      "link": "/coming-soon",
+      "keyFeatures": [
+        "Real-time emergency alert system",
+        "GPS location tracking and mapping",
+        "Multi-channel communication platform",
+        "Emergency responder dispatch system"
+      ],
+      "ctas": [
+        {
+          "label": "Explore",
+          "href": "/coming-soon"
+        },
+        {
+          "label": "Details",
+          "href": "/coming-soon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "f73fbd38-1ca8-4bb3-ac6b-fd520b73966e",
+    "timestamp": "2025-10-22T19:42:11.377Z",
+    "resource": "blog",
+    "action": "delete",
+    "userId": "admin",
+    "before": {
+      "slug": "hiii",
+      "title": "hello",
+      "blurb": "very interesting",
+      "author": "myself",
+      "published_at": "2025-10-23"
+    },
+    "after": null
+  },
+  {
+    "id": "ec160d18-e80a-43da-851c-ad4ef88aa126",
+    "timestamp": "2025-10-22T19:36:37.746Z",
+    "resource": "blog",
+    "action": "update",
+    "userId": "admin",
+    "before": {
+      "slug": "hiii",
+      "title": "hello",
+      "blurb": "very interestyiong",
+      "author": "myself",
+      "published_at": "2025-10-23"
+    },
+    "after": {
+      "slug": "hiii",
+      "title": "hello",
+      "blurb": "very interesting",
+      "author": "myself",
+      "published_at": "2025-10-23",
+      "publication_date": "2025-10-07",
+      "estimated_read_duration": "5 mins"
+    }
+  },
+  {
+    "id": "e1e8bf85-8f7e-4509-93b2-57bf8d792325",
+    "timestamp": "2025-10-22T19:34:35.178Z",
+    "resource": "blog",
+    "action": "create",
+    "userId": "admin",
+    "after": {
+      "slug": "hiii",
+      "title": "hello",
+      "blurb": "very interestyiong",
+      "author": "myself",
+      "published_at": "2025-10-23",
+      "publication_date": "2025-10-21",
+      "estimated_read_duration": "5 mins"
+    }
+  },
+  {
+    "id": "14227c8a-ff08-4e4a-988f-1f8748da85ca",
+    "timestamp": "2025-10-20T18:42:06.851Z",
+    "resource": "blog",
+    "action": "delete",
+    "userId": "admin",
+    "before": {
+      "slug": "vedic-ai-living-mantras",
+      "title": "Vedic AI: Living Mantras for Explainable Intelligence",
+      "blurb": "Synthesizing cultural heuristics with quantum-aligned agent orchestration.",
+      "author": "Trinix Lab",
+      "published_at": "2025-07-12"
+    },
+    "after": null
+  }
+]

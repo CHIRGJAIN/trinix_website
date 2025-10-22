@@ -1,0 +1,148 @@
+{
+  "published": [
+    {
+      "id": "sos",
+      "title": "bohot badiuya",
+      "authors": [
+        "CHIRAG JAIN"
+      ],
+      "venue": "journal",
+      "doi": "www.google.com",
+      "open_access": true,
+      "domain": [
+        "FINTECH"
+      ]
+    },
+    {
+      "id": "cnse-01",
+      "title": "Reimagining Global Monetary Standards: A Lifespan‑Linked and Contribution‑Based Framework for Post‑Fiat Reserve Currencies",
+      "authors": [],
+      "venue": "CNSE Journals",
+      "doi": "https://cnsejournals.org/cloud/reimagining-global-monetary-standards-a-lifespan-linked-and-contribution-based-framework-for-post-fiat-reserve-currencies/",
+      "open_access": true,
+      "domain": [
+        "FinTech",
+        "AI"
+      ]
+    },
+    {
+      "id": "cnse-02",
+      "title": "Reimagining Global Monetary Standards: A Lifespan‑Linked and Contribution‑Based Framework for Post‑Fiat Reserve Currencies",
+      "authors": [],
+      "venue": "CNSE Journals",
+      "doi": "https://cnsejournals.org/cloud/reimagining-global-monetary-standards-a-lifespan-linked-and-contribution-based-framework-for-post-fiat-reserve-currencies/",
+      "open_access": true,
+      "domain": [
+        "FinTech",
+        "AI"
+      ]
+    }
+  ],
+  "preprints": [
+    {
+      "id": "pre-2025-dharamraksha",
+      "title": "DharamRaksha: Advancement of AI Integration in Judicial Administration — A Feasibility Study for India and Global Adaptation",
+      "authors": [
+        "Trinix Research Team"
+      ],
+      "server": "Preprint (Trinix Research)",
+      "identifier": "TRX-DR-2025-PP",
+      "version_date": "2025-10-19",
+      "abstract": "The judicial administration systems of many countries suffer from serious inefficiencies, including case backlogs, inconsistent legal interpretations, and administrative delays. In India alone, over 50 million cases are pending across all courts (J. Chowdhury, 2025, June 20), highlighting an acute need for reform. Law enforcement agencies and court administrations also face documentation bottlenecks, corruption, and slow evidence collection, all of which hinder timely justice delivery. The integration of Artificial Intelligence (AI), Machine Learning (ML), Natural Language Processing (NLP), Blockchain, and Explainable AI (XAI) into judicial processes presents a transformative opportunity to streamline case resolution, enhance transparency, and improve efficiency in governance.\nThis paper proposes “DharamRaksha,” an AI-powered multi-tier judicial administration platform designed to assist judges, lawyers, law enforcement agencies, and the public in judgment support, case management, legal research, policy implementation, and transparent governance. The system is conceptualized as a sovereign AI platform for the judiciary, tailored to national legal frameworks while interconnected to a global “super-domain” for cross-jurisdictional intelligence sharing and real-time case tracking. The technical feasibility of this framework is examined through its key components: AI-driven legal research tools, automated document drafting, blockchain-secured evidence management, and real-time adjudication support. We evaluate the anticipated economic and administrative impacts of AI-driven judicial automation and discuss the ethical considerations, bias mitigation strategies, and regulatory compliance measures necessary for responsible implementation. While early deployments of AI in judicial contexts have occurred in countries like China, Estonia, and the UK, these have been limited in scope and raised concerns about transparency, fairness, and judicial autonomy. The proposed model aims to overcome such challenges through robust human oversight, XAI-based explainability, and a structured AI governance framework.\nThe paper presents a AI-assisted legal modernization framework as a benchmark; this research offers a feasible roadmap for integrating AI into judicial administration in India and beyond. Leveraging AI for legal governance has the potential to significantly reduce case backlogs, improve decision-making efficiency, and ensure fair and accountable adjudication in both national and international jurisdictions, provided that these technologies are deployed with careful attention to ethical and legal safeguards.",
+      "pdf": "/preprints/DharamRaksha.pdf",
+      "domain": [
+        "AI",
+        "GovTech",
+        "LegalTech"
+      ],
+      "modal": {
+        "layout": "research-square",
+        "sections": {
+          "authors": true,
+          "abstract": true,
+          "pdf_viewer": true
+        },
+        "actions": [
+          {
+            "label": "Open PDF",
+            "href": "/preprints/dharamraksha.pdf",
+            "target": "_blank",
+            "variant": "primary"
+          },
+          {
+            "label": "Download",
+            "href": "/preprints/dharamraksha.pdf",
+            "download": true,
+            "variant": "secondary"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pre-2025-vimana-ai",
+      "title": "Artificial Intelligence in Ancient Vimana Technology",
+      "authors": [
+        "Trinix Research Team"
+      ],
+      "server": "Preprint (Trinix Research)",
+      "identifier": "TRX-VIMANA-2025-PP",
+      "version_date": "2025-10-19",
+      "abstract": "Ancient Indian scriptures, notably the Ramayana and the Vaimanika Shastra, contain elaborate descriptions of flying machines known as Vimanas. These \"aerial chariots\" or \"flying palaces\" are depicted with astonishing capabilities, ranging from autonomous flight and swift maneuvers to shape-shifting and sophisticated weaponry. Traditionally viewed as mythological, these accounts have prompted speculative inquiry into whether they might represent conceptualizations of an advanced civilization.",
+      "pdf": "/preprints/Artificial Intelligence in Ancient Vimana Technology.pdf",
+      "domain": [
+        "AI",
+        "Aerospace (Speculative)",
+        "Human-Computer Interaction"
+      ],
+      "modal": {
+        "layout": "research-square",
+        "sections": {
+          "authors": true,
+          "abstract": true,
+          "pdf_viewer": true
+        },
+        "actions": [
+          {
+            "label": "Open PDF",
+            "href": "/preprints/ai-vimana.pdf",
+            "target": "_blank",
+            "variant": "primary"
+          },
+          {
+            "label": "Download",
+            "href": "/preprints/ai-vimana.pdf",
+            "download": true,
+            "variant": "secondary"
+          }
+        ]
+      }
+    }
+  ],
+  "ongoing": [
+    {
+      "id": "ongoing-neural-finance",
+      "title": "Neural-Enhanced Financial Risk Assessment using Vedic Mathematical Principles",
+      "milestone_next": "Beta Testing Phase"
+    },
+    {
+      "id": "ongoing-quantum-consciousness",
+      "title": "Quantum Computing Applications in Consciousness and Psychology Research",
+      "milestone_next": "Quantum Algorithm Development"
+    },
+    {
+      "id": "ongoing-vedic-ai-ethics",
+      "title": "Vedic Philosophy Framework for Ethical AI Development",
+      "milestone_next": "Ethics Framework Implementation"
+    },
+    {
+      "id": "ongoing-financial-blockchain",
+      "title": "Decentralized Financial Systems for Rural Economic Empowerment",
+      "milestone_next": "Pilot Program Launch"
+    },
+    {
+      "id": "ongoing-psychological-ai",
+      "title": "AI-Assisted Mental Health Intervention using Cultural Psychology Models",
+      "milestone_next": "Clinical Trial Preparation"
+    }
+  ]
+}

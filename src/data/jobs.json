@@ -1,0 +1,34 @@
+[
+  {
+    "id": "frontend",
+    "title": "frontend developer",
+    "location": "noida",
+    "type": "Internship",
+    "description": "interesting role",
+    "link": "https://example.com/"
+  },
+  {
+    "id": "quantum-researcher",
+    "title": "Quantum Research Scientist",
+    "location": "Bengaluru, India",
+    "type": "Full-time",
+    "description": "Lead quantum-classical co-design initiatives for Trinix research pods.",
+    "link": "#"
+  },
+  {
+    "id": "k8s-architect",
+    "title": "Kubernetes Platform Architect",
+    "location": "Remote",
+    "type": "Full-time",
+    "description": "Architect resilient multi-cluster Kubernetes meshes optimized for AI workloads.",
+    "link": "#"
+  },
+  {
+    "id": "ml-ethicist",
+    "title": "ML Ethicist - Vedic AI",
+    "location": "Hybrid",
+    "type": "Contract",
+    "description": "Design governance frameworks for culturally aligned AI deployments.",
+    "link": "#"
+  }
+]

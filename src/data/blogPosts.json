@@ -1,0 +1,53 @@
+[
+  {
+    "slug": "hiii",
+    "title": "hello",
+    "blurb": "wsgbhsrthsntsbnsery",
+    "author": "myself",
+    "published_at": "2025-10-23",
+    "publication_date": "2025-10-23",
+    "estimated_read_duration": "5 mins",
+    "description_points": [
+      "SOS Emergency Network",
+      "SOS Emergency Network",
+      "SOS Emergency Network",
+      "SOS Emergency Network",
+      "SOS Emergency Network"
+    ]
+  },
+  {
+    "slug": "quantum-k8s-flight",
+    "title": "Quantum Workload Flight Plans on Kubernetes",
+    "blurb": "Pre-emptive node choreography with probabilistic scheduling meshes.",
+    "author": "Trinix Lab",
+    "published_at": "2025-06-28"
+  },
+  {
+    "slug": "neural-yantras",
+    "title": "Neural Yantras: Designing Glow Circuits for UI Futures",
+    "blurb": "Translating sacred geometry into adaptive interaction gradients.",
+    "author": "Trinix Lab",
+    "published_at": "2025-06-08"
+  },
+  {
+    "slug": "autonomous-pods",
+    "title": "Autonomous Pods and the Future of Research Ops",
+    "blurb": "Operating models for polymath pods spanning AI, quantum, and culture.",
+    "author": "Trinix Lab",
+    "published_at": "2025-05-24"
+  },
+  {
+    "slug": "copper-gold-economics",
+    "title": "Copper-Gold Economics of Quantum Finance",
+    "blurb": "Mapping programmable finance experiments across hybrid ledgers.",
+    "author": "Trinix Lab",
+    "published_at": "2025-04-30"
+  },
+  {
+    "slug": "k8s-glow-security",
+    "title": "Aurora Glow: Rethinking Kubernetes Security Posture",
+    "blurb": "Harnessing Vedic threat modeling for self-healing clusters.",
+    "author": "Trinix Lab",
+    "published_at": "2025-04-12"
+  }
+]
