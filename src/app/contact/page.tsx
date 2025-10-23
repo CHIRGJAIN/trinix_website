@@ -46,17 +46,17 @@ function ContactSection() {
       {
         icon: "📍",
         title: "Our Headquarters",
-        lines: ["123 Tech Plaza, Innovation District", "Silicon Valley, CA 94025", "United States"],
+        lines: ["FF-110, Harsha Mall, Commercial Belt, Alpha-1, Greater Noida,201310", "Uttar Pradesh"],
       },
       {
         icon: "📞",
         title: "Sales & Support",
-        lines: ["Sales: +1 (555) 123-4567 (M-F, 9am-5pm EST)", "Support: +1 (555) 123-4568 (Available 24/7)"],
+        lines: ["+91 8006464222, +91 9899721172, +91 8510910056"],
       },
       {
         icon: "✉️",
         title: "Email",
-        lines: ["General Inquiries: hello@trinix.com", "Technical Support: support@trinix.com"],
+        lines: ["General Inquiries: trinix.pvt.ltd@gmail.com"],
       },
     ],
     []
