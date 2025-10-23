@@ -49,8 +49,8 @@ export async function upsertBlogPost(prevState: BlogFormState, formData: FormDat
     author: formData.get("author")?.toString(),
     published_at: formData.get("published_at")?.toString(),
     publication_date: formData.get("publication_date")?.toString(),
-  estimated_read_duration: formData.get("estimated_read_duration")?.toString(),
-  description_points: rawDescriptionPoints.length ? rawDescriptionPoints : undefined,
+    estimated_read_duration: formData.get("estimated_read_duration")?.toString(),
+    description_points: rawDescriptionPoints.length ? rawDescriptionPoints : undefined,
   });
 
   if (!submission.success) {

@@ -1,11 +1,12 @@
 'use client';
 
-import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { signIn } from 'next-auth/react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
+
+const HARDCODED_EMAIL = 'admin@trinix.dev';
+const HARDCODED_PASSWORD = 'letmein';
 
 const formSchema = z.object({
   email: z.string().email('Enter a valid email'),
@@ -13,7 +14,6 @@ const formSchema = z.object({
 });
 
 export function LoginForm() {
-  const searchParams = useSearchParams();
   const router = useRouter();
   const {
     register,
@@ -25,31 +25,16 @@ export function LoginForm() {
     defaultValues: { email: '', password: '' },
   });
 
-  const authError = searchParams.get('error');
-
-  useEffect(() => {
-    if (authError === 'CredentialsSignin') {
-      setError('password', { type: 'manual', message: 'Invalid email or password' });
-    } else if (authError === 'unauthorized') {
-      setError('password', {
-        type: 'manual',
-        message: 'Your account does not have access. Contact an administrator.',
-      });
-    }
-  }, [authError, setError]);
-
   const onSubmit = handleSubmit(async (values: z.infer<typeof formSchema>) => {
-    const response = await signIn('credentials', {
-      email: values.email,
-      password: values.password,
-      redirect: false,
-    });
+    const emailMatches = values.email.trim().toLowerCase() === HARDCODED_EMAIL;
+    const passwordMatches = values.password === HARDCODED_PASSWORD;
 
-    if (response?.error) {
+    if (!emailMatches || !passwordMatches) {
       setError('password', { type: 'manual', message: 'Invalid email or password' });
       return;
     }
 
+    document.cookie = `admin_session=authenticated; path=/; max-age=${60 * 60 * 8}`;
     router.push('/admin');
   });
 

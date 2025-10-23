@@ -3,8 +3,7 @@
 import { type ReactNode, useMemo } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { SessionProvider, signOut, useSession } from 'next-auth/react';
-import type { Session } from 'next-auth';
+import type { SimpleAdminSession } from '@/server/auth/simpleSession';
 
 const NAV_LINKS = [
   { href: '/admin', label: 'Dashboard', exact: true },
@@ -15,23 +14,20 @@ const NAV_LINKS = [
 ];
 
 type AdminShellProps = {
-  session: Session;
+  session: SimpleAdminSession | null;
   children: ReactNode;
 };
 
 export function AdminShell({ session, children }: AdminShellProps) {
   return (
-    <SessionProvider session={session}>
-      <div className="min-h-screen bg-[#05060a] text-white">
-        <DashboardChrome>{children}</DashboardChrome>
-      </div>
-    </SessionProvider>
+    <div className="min-h-screen bg-[#05060a] text-white">
+      <DashboardChrome session={session}>{children}</DashboardChrome>
+    </div>
   );
 }
 
-function DashboardChrome({ children }: { children: ReactNode }) {
+function DashboardChrome({ children, session }: { children: ReactNode; session: AdminShellProps['session'] }) {
   const pathname = usePathname();
-  const { data: session } = useSession();
 
   const nav = useMemo(
     () =>
@@ -41,6 +37,11 @@ function DashboardChrome({ children }: { children: ReactNode }) {
       }),
     [pathname]
   );
+
+  const handleSignOut = () => {
+    document.cookie = 'admin_session=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    window.location.href = '/admin/login';
+  };
 
   return (
     <div className="mx-auto flex max-w-7xl gap-8 px-6 py-10 md:px-10">
@@ -74,12 +75,12 @@ function DashboardChrome({ children }: { children: ReactNode }) {
           </div>
           <div className="flex items-center gap-4 text-sm text-white/80">
             <div className="hidden flex-col text-right sm:flex">
-              <span className="font-medium text-white">{session?.user?.name ?? 'Administrator'}</span>
-              <span className="text-xs uppercase tracking-[0.25em] text-white/60">{session?.user?.email}</span>
+              <span className="font-medium text-white">{session?.name ?? 'Administrator'}</span>
+              <span className="text-xs uppercase tracking-[0.25em] text-white/60">{session?.email}</span>
             </div>
             <button
               type="button"
-              onClick={() => signOut({ callbackUrl: '/admin/login' })}
+              onClick={handleSignOut}
               className="rounded-full border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white/80 transition hover:text-white"
             >
               Sign out

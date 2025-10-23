@@ -1,7 +1,7 @@
 import { readBlogPosts } from "@/server/data/blogStore";
 
-import { BlogPostsTable } from "@/app/admin/blog/BlogPostsTable";
-import { CreateBlogPostForm } from "@/app/admin/blog/CreateBlogPostForm";
+import { BlogPostsTable } from "@/app/admin/(dashboard)/blog/BlogPostsTable";
+import { CreateBlogPostForm } from "@/app/admin/(dashboard)/blog/CreateBlogPostForm";
 
 export default async function AdminBlogIndexPage() {
   const posts = await readBlogPosts();

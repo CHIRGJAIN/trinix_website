@@ -1,7 +1,7 @@
 import type { BlogPost } from "@/data/blogPosts";
 import { formatDate as formatDisplayDate } from "@/lib/formatDate";
 
-import { BlogPostRow } from "@/app/admin/blog/BlogPostRow";
+import { BlogPostRow } from "@/app/admin/(dashboard)/blog/BlogPostRow";
 
 type Props = {
   posts: BlogPost[];
