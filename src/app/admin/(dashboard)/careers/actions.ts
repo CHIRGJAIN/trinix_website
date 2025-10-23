@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import { z } from "zod";
 
 import { slugify } from "@/lib/slugify";
-import { auth } from "@/server/auth/core";
+import { getAdminSession } from "@/server/auth/simpleSession";
 import { appendAuditEntry } from "@/server/data/auditLog";
 import { readJobs, writeJobs } from "@/server/data/jobStore";
 import type { JobRole } from "@/types/content";
@@ -41,7 +41,7 @@ function normalizeLink(value?: string | null): string | undefined {
 }
 
 export async function upsertJob(prevState: JobFormState, formData: FormData): Promise<JobFormState> {
-  const session = await auth();
+  const session = await getAdminSession();
   if (!session) {
     return { message: "Unauthorized" };
   }
@@ -109,7 +109,7 @@ export async function upsertJob(prevState: JobFormState, formData: FormData): Pr
   await appendAuditEntry({
     resource: "careers",
     action,
-    userId: session.user?.id ?? session.user?.email ?? "admin",
+    userId: session.userId,
     before,
     after: nextJob,
   });
@@ -126,7 +126,7 @@ const deleteSchema = z.object({
 });
 
 export async function deleteJob(prevState: JobFormState, formData: FormData): Promise<JobFormState> {
-  const session = await auth();
+  const session = await getAdminSession();
   if (!session) {
     return { message: "Unauthorized" };
   }
@@ -147,7 +147,7 @@ export async function deleteJob(prevState: JobFormState, formData: FormData): Pr
   await appendAuditEntry({
     resource: "careers",
     action: "delete",
-    userId: session.user?.id ?? session.user?.email ?? "admin",
+    userId: session.userId,
     before: removed,
     after: null,
   });

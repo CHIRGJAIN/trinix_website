@@ -3,6 +3,8 @@
 import { type ReactNode, useMemo } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+
+import { ADMIN_SESSION_COOKIE } from '@/constants/adminSession';
 import type { SimpleAdminSession } from '@/server/auth/simpleSession';
 
 const NAV_LINKS = [
@@ -39,7 +41,7 @@ function DashboardChrome({ children, session }: { children: ReactNode; session: 
   );
 
   const handleSignOut = () => {
-    document.cookie = 'admin_session=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    document.cookie = `${ADMIN_SESSION_COOKIE}=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT`;
     window.location.href = '/admin/login';
   };
 

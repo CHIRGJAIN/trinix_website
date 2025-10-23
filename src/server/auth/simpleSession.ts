@@ -1,7 +1,6 @@
 import { cookies } from "next/headers";
 
-const SESSION_COOKIE = "admin_session";
-const SESSION_VALUE = "authenticated";
+import { ADMIN_SESSION_COOKIE, ADMIN_SESSION_VALUE } from "@/constants/adminSession";
 
 export type SimpleAdminSession = {
   userId: string;
@@ -9,9 +8,10 @@ export type SimpleAdminSession = {
   name: string;
 };
 
-export function getAdminSession(): SimpleAdminSession | null {
-  const cookie = cookies().get(SESSION_COOKIE);
-  if (!cookie || cookie.value !== SESSION_VALUE) {
+export async function getAdminSession(): Promise<SimpleAdminSession | null> {
+  const cookieStore = await cookies();
+  const cookie = cookieStore.get(ADMIN_SESSION_COOKIE);
+  if (!cookie || cookie.value !== ADMIN_SESSION_VALUE) {
     return null;
   }
 

@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 
-import { auth } from "@/server/auth/core";
+import { getAdminSession } from "@/server/auth/simpleSession";
 import { appendAuditEntry } from "@/server/data/auditLog";
 import { readResearchCatalogue, writeResearchCatalogue } from "@/server/data/researchStore";
 import type { ResearchCatalogue } from "@/server/data/researchStore";
@@ -57,7 +57,7 @@ function cloneCatalogue(catalogue: ResearchCatalogue): Required<ResearchCatalogu
 }
 
 export async function upsertResearchEntry(prevState: ResearchFormState, formData: FormData): Promise<ResearchFormState> {
-  const session = await auth();
+  const session = await getAdminSession();
   if (!session) {
     return { message: "Unauthorized" };
   }
@@ -215,7 +215,7 @@ export async function upsertResearchEntry(prevState: ResearchFormState, formData
   await appendAuditEntry({
     resource: `research-${submission.collection}`,
     action,
-    userId: session.user?.id ?? session.user?.email ?? "admin",
+    userId: session.userId,
     before,
     after,
   });
@@ -233,7 +233,7 @@ const deleteSchema = z.object({
 });
 
 export async function deleteResearchEntry(prevState: ResearchFormState, formData: FormData): Promise<ResearchFormState> {
-  const session = await auth();
+  const session = await getAdminSession();
   if (!session) {
     return { message: "Unauthorized" };
   }
@@ -259,7 +259,7 @@ export async function deleteResearchEntry(prevState: ResearchFormState, formData
   await appendAuditEntry({
     resource: `research-${submission.data.collection}`,
     action: "delete",
-    userId: session.user?.id ?? session.user?.email ?? "admin",
+    userId: session.userId,
     before: removed,
     after: null,
   });

@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import { z } from "zod";
 
 import { slugify } from "@/lib/slugify";
-import { auth } from "@/server/auth/core";
+import { getAdminSession } from "@/server/auth/simpleSession";
 import { appendAuditEntry } from "@/server/data/auditLog";
 import { readProjects, writeProjects } from "@/server/data/projectStore";
 import type { Project, ProjectCta } from "@/types/content";
@@ -73,7 +73,7 @@ function normalizeLink(value?: string | null): string | undefined {
 }
 
 export async function upsertProject(prevState: ProjectFormState, formData: FormData): Promise<ProjectFormState> {
-  const session = await auth();
+  const session = await getAdminSession();
   if (!session) {
     return { message: "Unauthorized" };
   }
@@ -162,7 +162,7 @@ export async function upsertProject(prevState: ProjectFormState, formData: FormD
   await appendAuditEntry({
     resource: "projects",
     action,
-    userId: session.user?.id ?? session.user?.email ?? "admin",
+    userId: session.userId,
     before,
     after: nextProject,
   });
@@ -179,7 +179,7 @@ const deleteSchema = z.object({
 });
 
 export async function deleteProject(prevState: ProjectFormState, formData: FormData): Promise<ProjectFormState> {
-  const session = await auth();
+  const session = await getAdminSession();
   if (!session) {
     return { message: "Unauthorized" };
   }
@@ -200,7 +200,7 @@ export async function deleteProject(prevState: ProjectFormState, formData: FormD
   await appendAuditEntry({
     resource: "projects",
     action: "delete",
-    userId: session.user?.id ?? session.user?.email ?? "admin",
+    userId: session.userId,
     before: removed,
     after: null,
   });

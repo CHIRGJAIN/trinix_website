@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 
-import { auth } from "@/server/auth/core";
+import { getAdminSession } from "@/server/auth/simpleSession";
 import { appendAuditEntry } from "@/server/data/auditLog";
 import { readBlogPosts, writeBlogPosts } from "@/server/data/blogStore";
 import { slugify } from "@/lib/slugify";
@@ -31,7 +31,7 @@ export type BlogFormState = {
 };
 
 export async function upsertBlogPost(prevState: BlogFormState, formData: FormData): Promise<BlogFormState> {
-  const session = await auth();
+  const session = await getAdminSession();
   if (!session) {
     return { message: "Unauthorized" };
   }
@@ -104,7 +104,7 @@ export async function upsertBlogPost(prevState: BlogFormState, formData: FormDat
   await appendAuditEntry({
     resource: "blog",
     action,
-    userId: session.user?.id ?? session.user?.email ?? "admin",
+    userId: session.userId,
     before,
     after: nextPost,
   });
@@ -119,7 +119,7 @@ export async function upsertBlogPost(prevState: BlogFormState, formData: FormDat
 const deleteSchema = z.object({ slug: z.string().min(1, "Slug is required") });
 
 export async function deleteBlogPost(prevState: BlogFormState, formData: FormData): Promise<BlogFormState> {
-  const session = await auth();
+  const session = await getAdminSession();
   if (!session) {
     return { message: "Unauthorized" };
   }
@@ -140,7 +140,7 @@ export async function deleteBlogPost(prevState: BlogFormState, formData: FormDat
   await appendAuditEntry({
     resource: "blog",
     action: "delete",
-    userId: session.user?.id ?? session.user?.email ?? "admin",
+    userId: session.userId,
     before: removed,
     after: null,
   });

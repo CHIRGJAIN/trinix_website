@@ -5,6 +5,8 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useRouter } from 'next/navigation';
 
+import { ADMIN_SESSION_COOKIE, ADMIN_SESSION_VALUE } from '@/constants/adminSession';
+
 const HARDCODED_EMAIL = 'admin@trinix.dev';
 const HARDCODED_PASSWORD = 'letmein';
 
@@ -34,7 +36,7 @@ export function LoginForm() {
       return;
     }
 
-    document.cookie = `admin_session=authenticated; path=/; max-age=${60 * 60 * 8}`;
+  document.cookie = `${ADMIN_SESSION_COOKIE}=${ADMIN_SESSION_VALUE}; path=/; max-age=${60 * 60 * 8}`;
     router.push('/admin');
   });
 
