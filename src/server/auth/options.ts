@@ -10,16 +10,15 @@ const credentialsSchema = z.object({
 });
 
 function resolveEnvUser() {
-  const email = process.env.ADMIN_EMAIL;
-  const passwordHash = process.env.ADMIN_PASSWORD_HASH;
+  const email = process.env.ADMIN_EMAIL ?? "admin@trinix.dev";
+  const passwordHash = process.env.ADMIN_PASSWORD_HASH ?? "trinix-admin";
   const displayName = process.env.ADMIN_NAME ?? "Trinix Admin";
   const roles = (process.env.ADMIN_ROLES ?? "admin").split(",").map((role) => role.trim()).filter(Boolean);
 
-  if (!email || !passwordHash) {
+  if (!process.env.ADMIN_EMAIL || !process.env.ADMIN_PASSWORD_HASH) {
     console.warn(
-      "[Auth] ADMIN_EMAIL and ADMIN_PASSWORD_HASH must be set for credentials login. Login attempts will fail until configured."
+      "[Auth] Using default admin credentials. Set ADMIN_EMAIL and ADMIN_PASSWORD_HASH environment variables before production."
     );
-    return null;
   }
 
   return { id: process.env.ADMIN_USER_ID ?? "admin", email, passwordHash, name: displayName, roles } satisfies User & {

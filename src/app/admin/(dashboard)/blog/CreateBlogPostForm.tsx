@@ -3,7 +3,7 @@
 import { useFormState } from "react-dom";
 
 import { type BlogFormState, upsertBlogPost } from "./actions";
-import { SaveButton } from "@/app/admin/(dashboard)/blog/SaveButton";
+import { SaveButton } from "./SaveButton";
 
 const INITIAL_STATE: BlogFormState = {};
 
