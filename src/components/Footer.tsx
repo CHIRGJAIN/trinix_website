@@ -34,7 +34,7 @@ export function Footer() {
             className="group relative inline-flex items-center justify-center self-start rounded-full border border-aurora-teal/60 px-5 py-2 text-[0.62rem] font-semibold uppercase tracking-[0.35em] text-white transition-all duration-300 hover:border-aurora-teal hover:bg-aurora-teal/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-aurora-teal/60 md:self-auto"
           >
             <span className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-core/20 via-aurora-teal/30 to-copper-gold/20 opacity-0 transition group-hover:opacity-100" />
-            <span className="relative">Admin Login</span>
+            <span className="relative">Login</span>
           </Link>
         </div>
       </div>
